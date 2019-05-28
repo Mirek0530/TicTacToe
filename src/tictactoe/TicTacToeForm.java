@@ -5,14 +5,14 @@ import javax.swing.*;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class TicTacToeForm extends javax.swing.JFrame {
-    
+
     int counter = 0;
-    
+
     public TicTacToeForm() {
         super("Tic Tac Toe");
         initComponents();
-        }
-    
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -171,96 +171,96 @@ public class TicTacToeForm extends javax.swing.JFrame {
         b2.setBackground(Color.GREEN);
         b3.setBackground(Color.GREEN);
     }
-    
+
     private void checkSituation() {
-        if (counter < 9) {    
-        if ("X".equals(jButton3.getText()) && "X".equals(jButton1.getText()) && "X".equals(jButton2.getText())) {
-            highlightButtons(jButton3, jButton1, jButton2);
-            showMessageDialog(null, "X wins!");
+        if (counter < 9) {
+            if ("X".equals(jButton3.getText()) && "X".equals(jButton1.getText()) && "X".equals(jButton2.getText())) {
+                highlightButtons(jButton3, jButton1, jButton2);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+            if ("X".equals(jButton4.getText()) && "X".equals(jButton5.getText()) && "X".equals(jButton6.getText())) {
+                highlightButtons(jButton4, jButton5, jButton6);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+            if ("X".equals(jButton7.getText()) && "X".equals(jButton8.getText()) && "X".equals(jButton9.getText())) {
+                highlightButtons(jButton7, jButton8, jButton9);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+            if ("X".equals(jButton3.getText()) && "X".equals(jButton6.getText()) && "X".equals(jButton9.getText())) {
+                highlightButtons(jButton3, jButton6, jButton9);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+            if ("X".equals(jButton1.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton7.getText())) {
+                highlightButtons(jButton1, jButton4, jButton7);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+            if ("X".equals(jButton2.getText()) && "X".equals(jButton5.getText()) && "X".equals(jButton8.getText())) {
+                highlightButtons(jButton2, jButton5, jButton8);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+            if ("X".equals(jButton3.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton8.getText())) {
+                highlightButtons(jButton3, jButton4, jButton8);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+            if ("X".equals(jButton9.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton2.getText())) {
+                highlightButtons(jButton9, jButton4, jButton2);
+                showMessageDialog(null, "X wins!");
+                clearAll();
+            }
+
+            if ("O".equals(jButton3.getText()) && "O".equals(jButton1.getText()) && "O".equals(jButton2.getText())) {
+                highlightButtons(jButton3, jButton1, jButton2);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+            if ("O".equals(jButton4.getText()) && "O".equals(jButton5.getText()) && "O".equals(jButton6.getText())) {
+                highlightButtons(jButton4, jButton5, jButton6);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+            if ("O".equals(jButton7.getText()) && "O".equals(jButton8.getText()) && "O".equals(jButton9.getText())) {
+                highlightButtons(jButton7, jButton8, jButton9);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+            if ("O".equals(jButton3.getText()) && "O".equals(jButton6.getText()) && "O".equals(jButton9.getText())) {
+                highlightButtons(jButton3, jButton6, jButton9);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+            if ("O".equals(jButton1.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton7.getText())) {
+                highlightButtons(jButton1, jButton4, jButton7);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+            if ("O".equals(jButton2.getText()) && "O".equals(jButton5.getText()) && "O".equals(jButton8.getText())) {
+                highlightButtons(jButton2, jButton5, jButton8);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+            if ("O".equals(jButton3.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton8.getText())) {
+                highlightButtons(jButton3, jButton4, jButton8);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+            if ("O".equals(jButton9.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton2.getText())) {
+                highlightButtons(jButton9, jButton4, jButton2);
+                showMessageDialog(null, "O wins!");
+                clearAll();
+            }
+        } else {
+            showMessageDialog(null, "Draw!");
             clearAll();
         }
-        if ("X".equals(jButton4.getText()) && "X".equals(jButton5.getText()) && "X".equals(jButton6.getText())) {
-            highlightButtons(jButton4, jButton5, jButton6);
-            showMessageDialog(null, "X wins!");
-            clearAll();
-        }
-        if ("X".equals(jButton7.getText()) && "X".equals(jButton8.getText()) && "X".equals(jButton9.getText())) {
-            highlightButtons(jButton7, jButton8, jButton9);
-            showMessageDialog(null, "X wins!");
-            clearAll();
-        }
-        if ("X".equals(jButton3.getText()) && "X".equals(jButton6.getText()) && "X".equals(jButton9.getText())) {
-            highlightButtons(jButton3, jButton6, jButton9);
-            showMessageDialog(null, "X wins!");
-            clearAll();
-        }
-        if ("X".equals(jButton1.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton7.getText())) {
-            highlightButtons(jButton1, jButton4, jButton7);
-            showMessageDialog(null, "X wins!");
-            clearAll();
-        }
-        if ("X".equals(jButton2.getText()) && "X".equals(jButton5.getText()) && "X".equals(jButton8.getText())) {
-            highlightButtons(jButton2, jButton5, jButton8);
-            showMessageDialog(null, "X wins!");
-            clearAll();
-        }
-        if ("X".equals(jButton3.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton8.getText())) {
-            highlightButtons(jButton3, jButton4, jButton8);
-            showMessageDialog(null, "X wins!");
-            clearAll();
-        }
-        if ("X".equals(jButton9.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton2.getText())) {
-            highlightButtons(jButton9, jButton4, jButton2);
-            showMessageDialog(null, "X wins!");
-            clearAll();
-        } 
-        
-        if ("O".equals(jButton3.getText()) && "O".equals(jButton1.getText()) && "O".equals(jButton2.getText())) {
-            highlightButtons(jButton3, jButton1, jButton2);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        }
-        if ("O".equals(jButton4.getText()) && "O".equals(jButton5.getText()) && "O".equals(jButton6.getText())) {
-            highlightButtons(jButton4, jButton5, jButton6);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        }
-        if ("O".equals(jButton7.getText()) && "O".equals(jButton8.getText()) && "O".equals(jButton9.getText())) {
-            highlightButtons(jButton7, jButton8, jButton9);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        }
-        if ("O".equals(jButton3.getText()) && "O".equals(jButton6.getText()) && "O".equals(jButton9.getText())) {
-            highlightButtons(jButton3, jButton6, jButton9);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        }
-        if ("O".equals(jButton1.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton7.getText())) {
-            highlightButtons(jButton1, jButton4, jButton7);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        }
-        if ("O".equals(jButton2.getText()) && "O".equals(jButton5.getText()) && "O".equals(jButton8.getText())) {
-            highlightButtons(jButton2, jButton5, jButton8);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        }
-        if ("O".equals(jButton3.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton8.getText())) {
-            highlightButtons(jButton3, jButton4, jButton8);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        }
-        if ("O".equals(jButton9.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton2.getText())) {
-            highlightButtons(jButton9, jButton4, jButton2);
-            showMessageDialog(null, "O wins!");
-            clearAll();
-        } 
-    } else {
-        showMessageDialog(null, "Draw!");
-        clearAll();
     }
-}
-    
+
     private void clearAll() {
         jButton1.setText("");
         jButton2.setText("");
@@ -282,7 +282,7 @@ public class TicTacToeForm extends javax.swing.JFrame {
         jButton8.setBackground(null);
         jButton9.setBackground(null);
     }
-    
+
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if ("".equals(jButton3.getText())) {
             if (counter % 2 == 0) {
@@ -290,8 +290,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton3.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -302,8 +302,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton1.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -314,8 +314,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton2.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -326,8 +326,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton6.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -338,8 +338,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton4.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -350,8 +350,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton5.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -362,8 +362,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton9.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton9ActionPerformed
 
@@ -374,8 +374,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton7.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -386,8 +386,8 @@ public class TicTacToeForm extends javax.swing.JFrame {
             } else {
                 jButton8.setText("O");
             }
-            counter++; 
-        checkSituation();
+            counter++;
+            checkSituation();
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
