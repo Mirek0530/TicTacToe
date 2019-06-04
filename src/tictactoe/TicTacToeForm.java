@@ -1,12 +1,13 @@
 package tictactoe;
 
 import java.awt.Color;
+import java.util.function.Predicate;
 import javax.swing.*;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class TicTacToeForm extends javax.swing.JFrame {
 
-    int counter = 0;
+    private int counter = 0;
 
     public TicTacToeForm() {
         super("Tic Tac Toe");
@@ -172,85 +173,89 @@ public class TicTacToeForm extends javax.swing.JFrame {
         b3.setBackground(Color.GREEN);
     }
 
+    private Predicate<JButton> predicatorX = t -> "X".equals(t.getText());
+    
+    private Predicate<JButton> predicatorO = t -> "O".equals(t.getText());
+
     private void checkSituation() {
         if (counter < 9) {
-            if ("X".equals(jButton3.getText()) && "X".equals(jButton1.getText()) && "X".equals(jButton2.getText())) {
+            if (predicatorX.test(jButton3) && predicatorX.test(jButton1) && predicatorX.test(jButton2)) {
                 highlightButtons(jButton3, jButton1, jButton2);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
-            if ("X".equals(jButton4.getText()) && "X".equals(jButton5.getText()) && "X".equals(jButton6.getText())) {
+            if (predicatorX.test(jButton4) && predicatorX.test(jButton5) && predicatorX.test(jButton6)) {
                 highlightButtons(jButton4, jButton5, jButton6);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
-            if ("X".equals(jButton7.getText()) && "X".equals(jButton8.getText()) && "X".equals(jButton9.getText())) {
+            if (predicatorX.test(jButton7) && predicatorX.test(jButton8) && predicatorX.test(jButton9)) {
                 highlightButtons(jButton7, jButton8, jButton9);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
-            if ("X".equals(jButton3.getText()) && "X".equals(jButton6.getText()) && "X".equals(jButton9.getText())) {
+            if (predicatorX.test(jButton3) && predicatorX.test(jButton6) && predicatorX.test(jButton9)) {
                 highlightButtons(jButton3, jButton6, jButton9);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
-            if ("X".equals(jButton1.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton7.getText())) {
+            if (predicatorX.test(jButton1) && predicatorX.test(jButton4) && predicatorX.test(jButton7)) {
                 highlightButtons(jButton1, jButton4, jButton7);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
-            if ("X".equals(jButton2.getText()) && "X".equals(jButton5.getText()) && "X".equals(jButton8.getText())) {
+            if (predicatorX.test(jButton2) && predicatorX.test(jButton5) && predicatorX.test(jButton8)) {
                 highlightButtons(jButton2, jButton5, jButton8);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
-            if ("X".equals(jButton3.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton8.getText())) {
+            if (predicatorX.test(jButton3) && predicatorX.test(jButton4) && predicatorX.test(jButton8)) {
                 highlightButtons(jButton3, jButton4, jButton8);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
-            if ("X".equals(jButton9.getText()) && "X".equals(jButton4.getText()) && "X".equals(jButton2.getText())) {
+            if (predicatorX.test(jButton9) && predicatorX.test(jButton4) && predicatorX.test(jButton2)) {
                 highlightButtons(jButton9, jButton4, jButton2);
                 showMessageDialog(null, "X wins!");
                 clearAll();
             }
 
-            if ("O".equals(jButton3.getText()) && "O".equals(jButton1.getText()) && "O".equals(jButton2.getText())) {
+            if (predicatorO.test(jButton3) && predicatorO.test(jButton1) && predicatorO.test(jButton2)) {
                 highlightButtons(jButton3, jButton1, jButton2);
                 showMessageDialog(null, "O wins!");
                 clearAll();
             }
-            if ("O".equals(jButton4.getText()) && "O".equals(jButton5.getText()) && "O".equals(jButton6.getText())) {
+            if (predicatorO.test(jButton4) && predicatorO.test(jButton5) && predicatorO.test(jButton6)) {
                 highlightButtons(jButton4, jButton5, jButton6);
                 showMessageDialog(null, "O wins!");
                 clearAll();
             }
-            if ("O".equals(jButton7.getText()) && "O".equals(jButton8.getText()) && "O".equals(jButton9.getText())) {
+            if (predicatorO.test(jButton7) && predicatorO.test(jButton8) && predicatorO.test(jButton9)) {
                 highlightButtons(jButton7, jButton8, jButton9);
                 showMessageDialog(null, "O wins!");
                 clearAll();
             }
-            if ("O".equals(jButton3.getText()) && "O".equals(jButton6.getText()) && "O".equals(jButton9.getText())) {
+            if (predicatorO.test(jButton3) && predicatorO.test(jButton6) && predicatorO.test(jButton9)) {
                 highlightButtons(jButton3, jButton6, jButton9);
                 showMessageDialog(null, "O wins!");
                 clearAll();
             }
-            if ("O".equals(jButton1.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton7.getText())) {
+            if (predicatorO.test(jButton1) && predicatorO.test(jButton4) && predicatorO.test(jButton7)) {
                 highlightButtons(jButton1, jButton4, jButton7);
                 showMessageDialog(null, "O wins!");
                 clearAll();
             }
-            if ("O".equals(jButton2.getText()) && "O".equals(jButton5.getText()) && "O".equals(jButton8.getText())) {
+            if (predicatorO.test(jButton2) && predicatorO.test(jButton5) && predicatorO.test(jButton8)) {
                 highlightButtons(jButton2, jButton5, jButton8);
                 showMessageDialog(null, "O wins!");
                 clearAll();
             }
-            if ("O".equals(jButton3.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton8.getText())) {
+            if (predicatorO.test(jButton3) && predicatorO.test(jButton4) && predicatorO.test(jButton8)) {
                 highlightButtons(jButton3, jButton4, jButton8);
                 showMessageDialog(null, "O wins!");
                 clearAll();
             }
-            if ("O".equals(jButton9.getText()) && "O".equals(jButton4.getText()) && "O".equals(jButton2.getText())) {
+            if (predicatorO.test(jButton9) && predicatorO.test(jButton4) && predicatorO.test(jButton2)) {
                 highlightButtons(jButton9, jButton4, jButton2);
                 showMessageDialog(null, "O wins!");
                 clearAll();
